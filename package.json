@@ -1,5 +1,5 @@
 {
-  "name": "@anio-js-core-foundation/create-temporary-resource",
+  "name": "@anio-js-foundation/create-temporary-resource",
   "version": "0.0.1",
   "description": "Creates a temporary resource in a browser or in node.",
   "main": "index.mjs",
@@ -7,6 +7,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anio-js-core-foundation/create-temporary-resource.git"
+    "url": "git+https://github.com/anio-js-foundation/create-temporary-resource.git"
   }
 }

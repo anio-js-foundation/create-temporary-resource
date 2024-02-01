@@ -1,5 +1,7 @@
+import isNode from "@anio-js-core-foundation/is-node"
+
 export default async function createTemporaryResource(data, type = "text/plain") {
-	if (typeof process === "object" && typeof window === "undefined") {
+	if (isNode()) {
 		const fs = await import("node:fs")
 		const os = await import("node:os")
 		const path = await import("node:path")

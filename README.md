@@ -13,6 +13,5 @@ const {location, cleanup} = await createTemporaryResource(
 
 console.log(location)
 
-// no-op in browser
 cleanup()
 ```

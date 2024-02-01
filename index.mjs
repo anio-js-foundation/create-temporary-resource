@@ -31,7 +31,7 @@ export default async function createTemporaryResource(data, type = "text/plain")
 		return {
 			location,
 			cleanup() {
-
+				URL.revokeObjectURL(location)
 			}
 		}
 	}

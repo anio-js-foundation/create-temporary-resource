@@ -24,6 +24,11 @@ export default async function createTemporaryResource(
 	data, {type = "text/plain", auto_cleanup = true} = {}
 ) {
 	if (isNode()) {
+		/**
+		 * Dynamically import node modules so this
+		 * code can be parsed by a browser implementation
+		 * that doesn't have those modules.
+		 */
 		const {default: fs} = await import("node:fs")
 		const {default: os} = await import("node:os")
 		const {default: path} = await import("node:path")

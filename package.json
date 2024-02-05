@@ -10,6 +10,7 @@
     "url": "git+https://github.com/anio-js-foundation/create-temporary-resource.git"
   },
   "devDependencies": {
+    "@anio-js-core-foundation/create-temporary-resource-factory": "^0.3.0",
     "@anio-js-core-foundation/is-node": "^1.0.0",
     "@anio-js-foundation/bundle-package": "^2.1.0"
   },

@@ -8,7 +8,7 @@ Uses the filesystem in node and Blobs in Browsers.
 import createTemporaryResource from "@anio-js-foundation/create-temporary-resource"
 
 const {location, cleanup} = await createTemporaryResource(
-	`console.log("hello")`, "text/javascript"
+	`console.log("hello")`, {type: "text/javascript"}
 )
 
 console.log(location)

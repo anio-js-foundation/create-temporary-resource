@@ -1,5 +1,5 @@
-import isNode from "@anio-js-core-foundation/is-node"
-import createTemporaryResourceFactory from "@anio-js-core-foundation/create-temporary-resource-factory"
+import isNode from "@anio-js-foundation/is-node"
+import createTemporaryResourceFactory from "./createTemporaryResourceFactory.mjs"
 
 const createTemporaryResource = createTemporaryResourceFactory({
 	node: isNode()

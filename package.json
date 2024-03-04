@@ -10,14 +10,13 @@
     "url": "git+https://github.com/anio-js-foundation/create-temporary-resource.git"
   },
   "devDependencies": {
-    "@anio-js-core-foundation/create-temporary-resource-factory": "^0.3.1",
-    "@anio-js-core-foundation/is-node": "^1.0.0",
-    "@anio-js-foundation/bundle-package": "^2.1.0"
+    "@anio-js-foundation/is-node": "^2.0.0",
+    "@anio-software/npm-package-bundler": "^1.0.0"
+  },
+  "scripts": {
+    "prepare": "./node_modules/.bin/npm-package-bundler ."
   },
   "files": [
     "./dist/package.mjs"
-  ],
-  "scripts": {
-    "prepare": "./node_modules/.bin/bundle-package ."
-  }
+  ]
 }

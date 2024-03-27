@@ -37,7 +37,15 @@ async function createTemporaryResourceImplementation(
 
 		const tmppath = path.join(os.tmpdir(), tmpname + extension)
 
-		fs.writeFileSync(tmppath, data)
+		// make sure file is created exclusively and with only
+		// owner having write permission
+		const fd = fs.openSync(tmppath, "wx+", 0o644)
+
+		fs.writeSync(fd, data)
+		fs.closeSync(fd)
+
+		// protect file by setting it to read only
+		fs.chmodSync(tmppath, 0o444)
 
 		const location = fs.realpathSync(tmppath)
 

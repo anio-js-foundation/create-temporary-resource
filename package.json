@@ -1,6 +1,6 @@
 {
   "name": "@anio-js-foundation/create-temporary-resource",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Create a temporary resource in a browser or in node.",
   "main": "./build/package.mjs",
   "author": "Anio Software <info@anio.software>",
